@@ -94,7 +94,7 @@ if correct_file:
                             mismatch_display_cols.append(f"{col}_checking")
                             mismatch_display_cols.append(f"{col}_Match")  # Include match indicator
 
-                        # Convert match results to ✅ or ❌ for better readability
+                        # Convert match results to better readability
                         for col in selected_columns:
                             mismatched_data[f"{col}_Match"] = mismatched_data[f"{col}_Match"].apply(lambda x: "✅" if x else "❌")
                         #st.write("Columns in mismatched_data:", mismatched_data.columns)###-------new 
